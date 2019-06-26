@@ -11,7 +11,6 @@ def make_template():
 		git_branch_name = f"fs_{ticket_number}"
 	jira_link = f"[FS-{ticket_number}](https://earthwavetech.atlassian.net/browse/FS-{ticket_number})"
 	path = f"{FILE_LOCATION}/{f'FS-{ticket_number}'}"
-	print(path)
 	with open(path,'a') as thefile:
 		thefile.write("###-Auto-Generated-Merge-Template-###")
 		thefile.write("\n")
